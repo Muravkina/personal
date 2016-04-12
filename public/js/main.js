@@ -235,6 +235,25 @@
 
 					})
 
+			//Display description
+
+			var $display = $('a.display');
+
+			$display
+				.on('click', function(event) {
+
+					event.preventDefault();
+					event.stopPropagation();
+
+					var description = $(this).prev('.description');
+
+					//Change button text
+					description.is(":visible") ? $(this).text('Learn More') : $(this).text('Hide');
+					//Toggle description
+					description.slideToggle('slow');
+
+				});
+
 	});
 
 })(jQuery);

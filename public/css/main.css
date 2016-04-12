@@ -3713,7 +3713,7 @@
 	}
 
 	.column li {
-		margin-top: 8%;
+		margin-top: 1.5em;
 		list-style-type: none;
 	}
 
@@ -3725,3 +3725,11 @@
 	input[type='text'].error, input[type='email'].error, textarea.error {
 		border-color: rgb(255, 0, 0);
 	}
+
+	.description {
+		display: none;
+	}
+
+		.description a.button.small.fit {
+			margin-bottom: 2.5em;
+		}
