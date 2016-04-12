@@ -5,12 +5,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Dasha murauyova</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/main.css" />
-	</head>
+   <% include ./partials/head %>
 	<body>
 
 		<!-- Page Wrapper -->
@@ -18,25 +13,10 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Dasha Murauyova</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
+						<h1><a href="/">Dasha Murauyova</a></h1>
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">About</a></li>
-								<li><a href="elements.html">Resume</a></li>
-								<li><a href="#">Projects</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+
 
 				<!-- Banner -->
 					<section id="banner">
@@ -56,8 +36,8 @@
 									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">About</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<p>I learned the hard way to follow my heart. First, I left my comfort zone for a new country, USA, and now it lead me to this exciting chapter in my life. I’m currently transitioning to the new career of web development after exploring sales, healthcare and social studies. My experience helped me evolve patience, stress management, and communication skills, but most importantly, it pointed me closer to my passion- my curiosity about the ever-evolving world of the web. Like nothing else, coding always puts you face to face with new challenges to overcome, problems to solve, and new ideas to implement. And aren’t these the key components of the most satisfying career path to take?</p>
+										<!-- <a href="/about" class="special">Learn more</a> -->
 									</div>
 								</div>
 							</section>
@@ -65,23 +45,38 @@
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/pic77.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Tempus adipiscing</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">Skills</h2>
+										<ul class=" skills">
+											<div class="column">
+												<li><img src="images/icons/html5.png">  HTML5</li>
+												<li><img src="images/icons/css.png"> CSS3</li>
+												<li><img src="images/icons/js.png"> JavaScript</li>
+												<li><img class="long" src="images/icons/nodeJS.png"> NodeJS, Express</li>
+											</div>
+											<div class="column">
+												<li><img src="images/icons/ruby.png"> Ruby, Ruby on Rails</li>
+												<li><img class="long" src="images/icons/ajax.png"> AJAX</li>
+												<li><img src="images/icons/jquery.png"> JQuery</li>
+												<li><img src="images/icons/git.png"> GIT, Github</li>
+											</div>
+										</ul>
+										<!-- <a href="/resume" class="special">Download</a> -->
 									</div>
 								</div>
 							</section>
 
+
 						<!-- Three -->
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Nullam dignissim</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">Resume</h2>
+										<p>Available for download.</p>
+										<a href="/files/Resume.pdf" class="special">View</a>
+										<a href="/download" class="special">Download</a>
 									</div>
 								</div>
 							</section>
@@ -89,38 +84,40 @@
 						<!-- Four -->
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
-									<h2 class="major">Vitae phasellus</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+									<h2 class="major">Projects</h2>
 									<section class="features">
 										<article>
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<h3 class="major">Birch Massage</h3>
+											<p>Personal website of a massage therapist, created with NodeJS and MongoDB.</p>
 											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<h3 class="major">Challenge Accepted</h3>
+											<p>Website to create, share, accept and accomplish a variety of
+                        challenges, built on Ruby on Rails.</p>
 											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Ante fermentum</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<h3 class="major">AlumNUTS</h3>
+											<p>Application designed to help WD program officers to gauge the
+                        program's success during a graduate's job search and subsequent hire.</p>
 											<a href="#" class="special">Learn more</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
+											<h3 class="major">EcoDash</h3>
+											<p>CRUD application for discussing environmental issues, built
+                        with Sinatra and PSQL.</p>
 											<a href="#" class="special">Learn more</a>
 										</article>
 									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
+	<!-- 								<ul class="actions">
+										<li><a href="/projects" class="button">Browse All</a></li>
 									</ul>
-								</div>
+ -->								</div>
 							</section>
 
 					</section>
@@ -129,7 +126,6 @@
 					<section id="footer">
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
 							<form method="post" action="#">
 								<div class="field">
 									<label for="name">Name</label>
@@ -148,31 +144,22 @@
 								</ul>
 							</form>
 							<ul class="contact">
-								<li class="fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="fa-phone">(000) 000-0000</li>
-								<li class="fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+								<li class="fa-phone"><a target="_blank" href="tel:+13477770584">(347) 777-0584</a></li>
+								<li class="fa-envelope"><a target="_blank" href="mailto:dashamurauyova@gmail.com">dashamurauyova@gmail.com</a></li>
+								<li class="fa-linkedin"><a target="_blank" href="https://www.linkedin.com/in/dashamurauyova">Linkedin</a></li>
+								<li class="fa-github"><a target="_blank" href="https://github.com/Muravkina">GitHub</a></li>
+								<li class="fa-facebook"><a target="_blank" href="https://www.facebook.com/darya.murauyova?ref=bookmarks">Facebook</a></li>
+								<li class="fa-instagram"><a target="_blank" href="https://www.instagram.com/murafkina/">Instagram</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Muravkina. All rights reserved.</li></li>
 							</ul>
 						</div>
 					</section>
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="js/skel.min.js"></script>
-			<script src="js/jquery.min.js"></script>
-			<script src="js/jquery.scrollex.min.js"></script>
-			<script src="js/util.js"></script>
-			<script src="js/main.js"></script>
+      <% include ./partials/scripts %>
 
 	</body>
 </html>

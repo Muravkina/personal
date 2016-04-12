@@ -3118,7 +3118,7 @@
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../images/background.jpg");
 				background-size: auto, cover;
 				background-position: center, center;
 				margin-bottom: -6.5em;
@@ -3620,7 +3620,7 @@
 
 		#footer {
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../images/background.jpg");
 			background-size: auto, cover;
 			background-position: center, center;
 			margin-top: -6.5em;
@@ -3700,4 +3700,33 @@
 			padding: 2em 1.5em 0.1em 1.5em ;
 		}
 
+	}
+
+	.skills img {
+		width: 13%;
+		margin-left: 4%;
+		margin-right: 2%;
+	}
+
+	.skills img.long {
+		width: 25%;
+	}
+
+	.column {
+		width: 50%;
+		float: left;
+	}
+
+	.column li {
+		margin-top: 8%;
+		list-style-type: none;
+	}
+
+	#three a {
+		display: inline-block;
+		margin-left: 3%;
+	}
+
+	input[type='text'].error, input[type='email'].error, textarea.error {
+		border-color: rgb(255, 0, 0);
 	}

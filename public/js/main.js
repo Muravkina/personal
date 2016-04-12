@@ -156,6 +156,85 @@
 
 				});
 
+
+
+			//Submit Email
+				var $submit = $('#footer').find('input[type=submit]');
+				var $inputs = $('form :input').not(':input[type=submit]');
+
+				$inputs._isValid = function(field) {
+
+					//Check if the input is empty
+					 return field.val() ? true : false;
+				}
+
+				$inputs._fieldsAreValid = function() {
+
+	    		var fieldsAreValid = true;
+
+	    		//Check all inputs.
+	    		$inputs.each(function() {
+
+	    			if (!$inputs._isValid($(this))) {
+	    				//Field error
+	    				fieldsAreValid = false;
+	    				//Highlight the field
+	    				$(this).addClass('error');
+	    			} else {
+	    				//Remove red field
+	    				$(this).removeClass('error');
+	    			}
+
+	    		});
+
+	    		return fieldsAreValid;
+
+				}
+
+				$submit._success = function() {
+
+					var message = '<p>Your message was sent successfully. Thanks.</p>';
+					$('form').prepend(message);
+
+				}
+
+				$submit._sendEmail = function() {
+
+					var formData = $('form').serialize();
+
+					//Send Email
+					$.ajax({
+
+						type: 'POST',
+      			url:'/sendEmail',
+      			data: formData
+
+					}).done(function(data){
+
+						//Add message
+						$submit._success();
+
+					});
+
+				}
+
+				$submit._submitEmail = function(){
+
+					$inputs._fieldsAreValid() && $submit._sendEmail();
+
+				};
+
+
+				$submit
+					.on('click', function(event) {
+
+						event.preventDefault();
+						event.stopPropagation();
+
+						$submit._submitEmail();
+
+					})
+
 	});
 
 })(jQuery);
