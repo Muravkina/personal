@@ -2144,10 +2144,19 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			display: block;
+			width: 100%;
+			background-image: url(../images/glasses.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: 0 0.1em;
+			width: 1.75em;
+			height: 1.75em;
+			margin: 0 auto;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
+			content: "";
 		}
 
 		.icon > .label {
@@ -3713,7 +3722,7 @@
 	}
 
 	.column li {
-		margin-top: 1.5em;
+		margin-bottom: 1.5em;
 		list-style-type: none;
 	}
 
