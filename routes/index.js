@@ -20,7 +20,7 @@ router.get('/', function(req, res, next) {
 
 //Download resume
 router.get('/download', function(req, res, next) {
-  var file = __dirname + '/../public/files/resume.pdf'
+  var file = __dirname + '/../public/files/Resume.pdf'
   res.download(file);
 });
 
