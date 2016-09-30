@@ -194,7 +194,11 @@
 				$submit._success = function() {
 
 					var message = '<p>Your message was sent successfully. Thanks.</p>';
+					$inputs.each(function(){
+						$(this).val('');
+					})
 					$('form').prepend(message);
+					$submit.off('click');
 
 				}
 
@@ -202,14 +206,17 @@
 
 					var formData = $('form').serialize();
 
+					$(".cssload-container").css({"display":"inline-block"})
 					//Send Email
 					$.ajax({
 
 						type: 'POST',
-      			url:'/sendEmail',
-      			data: formData
+      					url:'/sendEmail',
+      					data: formData
 
 					}).done(function(data){
+
+						$(".cssload-container").hide();
 
 						//Add message
 						$submit._success();

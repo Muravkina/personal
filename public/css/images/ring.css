@@ -1,0 +1,47 @@
+.cssload-container {
+  width: 15%;
+  height: 25px;
+  text-align: center;
+  display: none;
+}
+
+.cssload-zenith {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  top: 0.5em;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  box-shadow: 3px 3px 1px rgb(255,255,255);
+  animation: cssload-spin 1230ms infinite linear;
+    -o-animation: cssload-spin 1230ms infinite linear;
+    -ms-animation: cssload-spin 1230ms infinite linear;
+    -webkit-animation: cssload-spin 1230ms infinite linear;
+    -moz-animation: cssload-spin 1230ms infinite linear;
+}
+
+
+
+@keyframes cssload-spin {
+  100%{ transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-o-keyframes cssload-spin {
+  100%{ -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-ms-keyframes cssload-spin {
+  100%{ -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-webkit-keyframes cssload-spin {
+  100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-moz-keyframes cssload-spin {
+  100%{ -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
